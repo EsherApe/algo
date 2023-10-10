@@ -1,11 +1,12 @@
+//  search O(1)
 //  insert O(1)
 //  lookup O(1)
 //  delete O(1)
-//  search O(1)
+//  could take more memory O(n)
 
-class HashTAble {
+class HashTable {
     constructor(size) {
-        this.data = new Array(size)
+        this.data = new Array(size) // immitate memory size
     }
 
     _hash(key) {
@@ -15,24 +16,49 @@ class HashTAble {
             this.data.length
         }
         return hash
-    }
+    } // O(1) because really small loop
 
     set(key, value) {
-        let address = this._hash(key)
+        const address = this._hash(key)
 
         if (!this.data[address]) {
             this.data[address] = []
         }
         this.data[address].push([key, value])
-    }
+    } // O(1)
 
     get(key) {
-        return this.data[this._hash(key)][1]
-    }
+        const address = this._hash(key)
+        const currentBucket = this.data[address]
+
+        if (currentBucket) {
+            for (let i = 0; i < currentBucket.length; i++) {
+                if(currentBucket[i][0] === key) {
+                    return currentBucket[i][0]
+                }
+            }
+        }
+
+        return undefined
+    } // O(1) || O(n) if collision because of law memory
+
+    keys() {
+        let keysArray = []
+
+        for (let i = 0; i < this.data.length; i++) {
+            if (this.data[i]) {
+                keysArray.push(this.data[i][0][0])
+            }
+        }
+
+        return keysArray
+    } // O(n)
 }
 
-const myHashTable = new HashTAble(50)
+const myHashTable = new HashTable(50) // memory size is  50
 
 myHashTable.set('grapes', 1000)
-console.log(myHashTable)
-console.log(myHashTable.get('grapes'))
+myHashTable.set('apples', 54)
+myHashTable.set('oranges', 2)
+
+console.log(myHashTable.keys())

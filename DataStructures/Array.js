@@ -1,7 +1,8 @@
+//  search O(n)
 //  insert O(n)
 //  lookup O(1)
 //  delete O(n)
-//  append O(1)
+//  push* O(1)
 
 class NewArray {
     constructor() {
