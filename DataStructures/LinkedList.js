@@ -68,6 +68,32 @@ class LinkedList {
         return this
     }
 
+    reverse() {
+        if (!this.head.next) {
+            return this.head
+        }
+
+        let prev = this.head
+        this.tail = this.head
+        let current = prev.next
+
+        // [prev] [current] [next]
+        while(current) {
+            // temporary save next node
+            const next = current.next
+            // set pointer to previous node
+            current.next = prev
+            // make current node previous
+            prev = current;
+            // make next node current to change its pointer to previous mode
+            current = next
+        }
+        // this is a tail (line 77), set pointer to null
+        this.head.next = null
+        // after loop prev its a last node with pointer
+        this.head = prev
+    }
+
     printList() {
         const array = []
         let currentNode = this.head
@@ -93,14 +119,12 @@ class LinkedList {
     }
 }
 
-const myLinkedList = new LinkedList(10)
+const myLinkedList = new LinkedList(1)
 
+myLinkedList.append(2)
+myLinkedList.append(3)
+myLinkedList.append(4)
 myLinkedList.append(5)
-myLinkedList.append(16)
-myLinkedList.prepend(1)
-myLinkedList.insert(2, 99)
 myLinkedList.printList()
-myLinkedList.remove(0)
+myLinkedList.reverse()
 myLinkedList.printList()
-
-console.log(myLinkedList)
