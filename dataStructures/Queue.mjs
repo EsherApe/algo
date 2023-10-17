@@ -32,10 +32,18 @@ class Queue {
     }
 
     dequeue() {
+        if (!this.first) {
+            return null
+        }
+
+        if (this.first === this.last) {
+            this.last = null
+        }
+
         const oldFirst = this.first
 
         this.first = this.first.next
-        length--
+        this.length--
 
         return oldFirst.value
     }
