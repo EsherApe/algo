@@ -5,12 +5,7 @@
 //  delete O(n)
 //  could take more memory O(n)
 
-class Node {
-    constructor(value, next = null) {
-        this.value = value
-        this.next = next
-    }
-}
+import Node from "./Node.mjs"
 
 class LinkedList {
     constructor(value) {
