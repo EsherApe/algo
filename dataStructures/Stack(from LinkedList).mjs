@@ -53,17 +53,3 @@ class Stack {
 }
 
 const myStack = new Stack()
-
-console.log(myStack.peek())
-
-myStack.push('google')
-myStack.push('udemy')
-myStack.push('cursera')
-
-console.log(myStack.peek())
-
-console.log(myStack.pop())
-console.log(myStack.pop())
-console.log(myStack.pop())
-
-console.log(myStack)
