@@ -35,7 +35,7 @@ const adjacentMatrixArr = [
     [0, 1, 1, 0], // node 3
 ]
 // Or
-const adjacentMatrexObj = {
+const adjacentMatrixObj = {
     '0': [0, 0, 1, 0], // node 0
     '1': [0, 0, 1, 1], // node 1
     '2': [1, 1, 0, 1], // node 2

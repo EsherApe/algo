@@ -2,6 +2,16 @@
 // insert O(log n)
 // delete O(log n)
 
+import { 
+    breadthFirstSearch,
+    breadthFirstSearchRecursive
+} from '../algorithms/search/breadthFirstSearch(BFS).mjs'
+import { 
+    depthFirstSearchInOrder,
+    depthFirstSearchPostOrder,
+    depthFirstSearchPreOrder
+} from '../algorithms/search/depthFirstSearch(DFS).mjs'
+
 class Node {
     constructor(value) {
         this.value = value
@@ -143,6 +153,16 @@ class BinarySearchTree {
             }
         }
     }
+
+    DFS = breadthFirstSearch
+
+    DFSRecursive = breadthFirstSearchRecursive
+
+    DFSInOrder = depthFirstSearchInOrder
+
+    DFSPreOrder = depthFirstSearchPreOrder
+
+    DFSPostOrder = depthFirstSearchPostOrder
 }
 
 const tree = new BinarySearchTree()
@@ -153,6 +173,17 @@ tree.insert(20)
 tree.insert(170)
 tree.insert(15)
 tree.insert(1)
+
+// [9,4,20,1,6,15,170]
+// console.log(tree.DFS())
+// console.log(tree.DFSRecursive())
+
+// [1,4,6,9,15,20,170]
+console.log(tree.DFSInOrder())
+// [9,4,1,6,20,15,170]
+console.log(tree.DFSPreOrder())
+// [1,6,4,15,170,20,9]
+console.log(tree.DFSPostOrder())
 
 //        9
 //     /     \
