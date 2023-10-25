@@ -12,13 +12,7 @@ import {
     depthFirstSearchPreOrder
 } from '../algorithms/search/depthFirstSearch(DFS).mjs'
 
-class Node {
-    constructor(value) {
-        this.value = value
-        this.left = null
-        this.right = null
-    }
-}
+import Node from './NodeBinaryTree.mjs'
 
 class BinarySearchTree {
     constructor() {

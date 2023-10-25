@@ -5,13 +5,7 @@
 //  delete O(n)
 //  could take more memory O(n)
 
-class Node {
-    constructor(value, next = null, prev = null) {
-        this.value = value
-        this.next = next
-        this.prev = prev // (1)
-    }
-}
+import Node from "./NodeTree.mjs"
 
 class DoublyLinkedList {
     constructor(value) {

@@ -2,7 +2,7 @@
 //  pop O(1)
 //  push O(1)
 //  peek O(1)
-import Node from "./Node.mjs"
+import Node from "./NodeTree.mjs"
 
 class Stack {
     constructor() {
