@@ -1,3 +1,8 @@
+#### Fair for graphs
+- **Breadth First Search** - Shortest path
+- **Depth First Search** - Check to see if it exists
+____________________________________________________________________
+
 #### 1. If you know a solution is not far from the root of the tree:
 
 - Breadth First Search
