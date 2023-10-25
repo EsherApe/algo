@@ -153,17 +153,9 @@ tree.insert(20)
 tree.insert(170)
 tree.insert(15)
 tree.insert(1)
-tree.insert(12)
-tree.insert(180)
-tree.remove(20)
-
-console.log(tree.lookup(20))
-console.log(tree)
 
 //        9
 //     /     \
 //   4        20   
 //  / \      /  \ 
 // 1   6   15   170
-//         /      \
-//        12      180
