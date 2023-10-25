@@ -97,7 +97,7 @@ class BinarySearchTree {
                         }
                     }
 
-                // Right child which doesnt have a left child
+                // Right child which doesn't have a left child
                 } else if (currentNode.right.left === null) {
                     if (parentNode === null) {
                         this.root = currentNode.left

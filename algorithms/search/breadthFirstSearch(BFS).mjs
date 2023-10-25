@@ -12,6 +12,6 @@
 //
 //[9,4,20,1,6,15,170]
 
-export const traverse = (node) => {
+export const BreadthFirstSearch = (node) => {
 
 }

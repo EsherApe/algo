@@ -1,4 +1,7 @@
 // Time complexity O(n)
+// + Less Memory
+// + Does Path Exist?
+// - Can Get Slow
 
 //        9
 //     /     \
@@ -9,6 +12,6 @@
 //
 //[9,4,1,6,20,15,170]
 
-export const traverse = (node) => {
+export const DepthFirstSearch = (node) => {
 
 }
