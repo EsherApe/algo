@@ -1,4 +1,4 @@
-const finfMoreRepeatable = (arr) => {
+const findMoreRepeatable = (arr) => {
     const map = {}
     let mostRepeated = null
     let maxCount = 0
@@ -22,8 +22,8 @@ const finfMoreRepeatable = (arr) => {
 const arr1 = ['a', 'b', 'c', 'a', 'd', 'e', 'c', 'b', 'a', 'a'] // a
 const arr2 = ['a', 'b', 'c', 'a', 'd', 'e', 'c', 'b', 'c'] // c
 
-finfMoreRepeatable(arr1)
-finfMoreRepeatable(arr2)
+findMoreRepeatable(arr1)
+findMoreRepeatable(arr2)
 
 
 const findNonDuplicates = (str) => {
