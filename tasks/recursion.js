@@ -90,7 +90,11 @@ const fibonacciMemoized = () => {
 
 const fasterFib = fibonacciMemoized()
 
-console.log(fibonacciRecursive(20))
-console.log(fasterFib(20))
-console.log(`slow ${countSlow} calculations`)
-console.log(`fast ${countFast} calculations`)
+console.time('fibonacciRecursive')
+console.log(fibonacciRecursive(35))
+console.timeEnd('fibonacciRecursive')
+console.log(`fibonacciRecursive: ${countSlow} calculations`)
+console.time('fasterFib')
+console.log(fasterFib(35))
+console.timeEnd('fasterFib')
+console.log(`fasterFib: ${countFast} calculations`)
