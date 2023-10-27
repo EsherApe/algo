@@ -17,4 +17,15 @@ export const steps = (n) => {
     }
 }
 
-steps(5)
+const steps2 = (n) => {
+    if (n === 0) {
+        return ''
+    }
+
+    let line = steps2(n-1) + '#'
+    console.log(line)
+
+    return line
+}
+
+steps2(5)
