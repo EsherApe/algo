@@ -20,10 +20,10 @@ const generateSpiralMatrix = (n) => {
         matrix[endColumn] = []
         for (let i = startRow; i <= endRow; i++) {
             matrix[i][endColumn] = currentValue
-            currentValue++
+            // currentValue++
         }
 
-        endRow--
+        // endRow--
 
         // TODO
     }
