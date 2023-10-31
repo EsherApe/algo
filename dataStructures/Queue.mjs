@@ -52,3 +52,5 @@ class Queue {
         return !this.length 
     }
 }
+
+export default Queue
