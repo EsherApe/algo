@@ -1,7 +1,7 @@
 const array = [3, 5, 2, 4, 8, 9]
 
 // brute force solution
-const sumTwo = (arr, target) => {
+const twoSum = (arr, target) => {
     for (let i = 0; i < arr.length; i++) {
         let current = arr[i]
         let numToFind = target - current
@@ -16,7 +16,7 @@ const sumTwo = (arr, target) => {
     return null
 } // O(n^2)
 
-const sumTwo2 = (arr, target) => {
+const twoSum2 = (arr, target) => {
     let store = {}
 
     for (let i = 0; i < arr.length; i++) {
