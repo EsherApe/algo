@@ -32,5 +32,3 @@ var maxArea2 = function(height) {
 
     return maxArea
 } // time: O(n), space: O(1)
-
-console.log(maxArea2(nums))
