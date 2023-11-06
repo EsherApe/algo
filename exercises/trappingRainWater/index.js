@@ -1,5 +1,3 @@
-const height = [4,2,0,3,2,5]
-
 const trapBruteForce = (height) => {
     let total = 0
 
@@ -27,6 +25,37 @@ const trapBruteForce = (height) => {
     }
 
     return total
-}
+} // time: O(n^2), space O(1)
+
+// Two pointers technic
+const trap = (height) => {
+    let total = 0
+    let maxL = 0
+    let maxR = 0
+    let p1 = 0
+    let p2 = height.length - 1
+
+    while (p1 < p2) {
+        if (height[p1] <= height[p2]) {
+            if (height[p1] > maxL) {
+                maxL = height[p1]
+            } else {
+                total += maxL - height[p1]
+            }
+            p1++
+        } else {
+            if (height[p2] > maxR) {
+                maxR = height[p2]
+            } else {
+                total += maxR - height[p2]
+            }
+            p2--
+        }
+    }
+
+    return total
+} // time: O(n), space O(1)
+
+const height = [4,2,0,3,2,5]
 
 console.log(trap(height))

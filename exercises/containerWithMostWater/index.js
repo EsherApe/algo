@@ -14,6 +14,7 @@ var maxArea = function(height) {
     return maxArea
 } // time: O(n^2), space: O(1)
 
+// Two pointers technic
 var maxArea2 = function(height) {
     let maxArea = 0
     let i = 0
