@@ -27,7 +27,7 @@ const trapBruteForce = (height) => {
     return total
 } // time: O(n^2), space O(1)
 
-// Two pointers technic
+// Two pointers technique
 const trap = (height) => {
     let total = 0
     let maxL = 0
