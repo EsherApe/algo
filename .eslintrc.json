@@ -27,6 +27,7 @@
         "build/"
     ],
     "rules": {
+        "no-empty": "off",
         "no-unused-vars": "off",
         "indent": [
             "error",
