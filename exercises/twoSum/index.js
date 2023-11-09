@@ -32,5 +32,3 @@ const twoSum2 = (arr, target) => {
 
     return null
 } // O(n)
-
-console.log(sumTwo2(array, 11))

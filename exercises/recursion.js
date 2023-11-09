@@ -3,7 +3,7 @@
 const factorialIterative = (num) => {
     let total = 1
 
-    if (number === 2) {
+    if (num === 2) {
         total = 2
     }
 

@@ -3,7 +3,7 @@ const findMoreRepeatable = (arr) => {
     let mostRepeated = null
     let maxCount = 0
 
-    for (char of arr) {
+    for (let char of arr) {
         if (!map[char]) {
             map[char] = 1
         } else {
@@ -47,9 +47,9 @@ const findNonDuplicates = (str) => {
     return null
 }
 
-const input1 = "aabbccddeeff"; // Expected output: 'null' (all characters are repeated)
-const input2 = "abcdefg"; // Expected output: 'a' (a is the first character without duplicates)
-const input3 = "abacabad"; // Expected output: 'c' (c is the first character without duplicates)
+const input1 = 'aabbccddeeff' // Expected output: 'null' (all characters are repeated)
+const input2 = 'abcdefg' // Expected output: 'a' (a is the first character without duplicates)
+const input3 = 'abacabad' // Expected output: 'c' (c is the first character without duplicates)
 
 findNonDuplicates(input1)
 findNonDuplicates(input2)
@@ -61,7 +61,7 @@ const denominations = [
     [50, 10],
     [10, 20],
     [5, 30]
-];
+]
 
 const createAtm = (denominations) => {
     const bank = denominations
@@ -101,7 +101,7 @@ const createAtm = (denominations) => {
             }
         }
 
-        return cashWithdraw;
+        return cashWithdraw
     }
 }
 

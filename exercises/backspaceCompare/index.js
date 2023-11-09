@@ -59,4 +59,4 @@ const backspaceCompare = (s, t) => {
 } // time: O(a + b), space: O(1)
 
 
-backspaceCompare("bxj##tw", "bxo#j##tw")
+backspaceCompare('bxj##tw', 'bxo#j##tw')

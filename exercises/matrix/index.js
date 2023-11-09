@@ -8,7 +8,7 @@ const generateSpiralMatrix = (n) => {
     let endColumn = n - 1
 
     while (startColumn <= endColumn && startRow <= endRow) {
-        // Top row
+    // Top row
         for (let i = startColumn; i <= endColumn; i++) {
             matrix[startRow][i] = currentValue
             currentValue++
@@ -25,7 +25,7 @@ const generateSpiralMatrix = (n) => {
 
         startRow--
 
-        // TODO
+    // TODO
     }
 
     console.log(matrix)

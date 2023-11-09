@@ -8,6 +8,24 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "overrides": [
+        {
+          "files": [
+            "**/*.test.js"
+          ],
+          "env": {
+            "jest": true
+          }
+        }
+    ],
+    "ignorePatterns": [
+        "node_modules/",
+        "**/node_modules/",
+        "/**/node_modules/*",
+        "out/",
+        "dist/",
+        "build/"
+    ],
     "rules": {
         "no-unused-vars": "off",
         "indent": [

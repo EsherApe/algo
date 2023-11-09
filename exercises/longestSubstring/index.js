@@ -44,4 +44,4 @@ const longestSubstring = (s) => {
     return maxSize
 } // time: O(n), space: O(n)
 
-longestSubstring("abba")
+longestSubstring('abba')
