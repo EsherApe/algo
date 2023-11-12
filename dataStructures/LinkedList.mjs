@@ -5,9 +5,9 @@
 //  delete O(n)
 //  could take more memory O(n)
 
-import Node from "./NodeTree.mjs"
+import Node from './NodeTree.mjs'
 
-class LinkedList {
+export class LinkedList {
     constructor(value) {
         this.head = new Node(value)
         this.tail = this.head
@@ -79,7 +79,7 @@ class LinkedList {
             // set pointer to previous node
             current.next = prev
             // make current node previous
-            prev = current;
+            prev = current
             // make next node current to change its pointer to previous mode
             current = next
         }
@@ -113,13 +113,3 @@ class LinkedList {
         return currentNode
     }
 }
-
-const myLinkedList = new LinkedList(1)
-
-myLinkedList.append(2)
-myLinkedList.append(3)
-myLinkedList.append(4)
-myLinkedList.append(5)
-myLinkedList.printList()
-myLinkedList.reverse()
-myLinkedList.printList()
