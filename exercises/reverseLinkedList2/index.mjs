@@ -23,11 +23,7 @@ const reverseLinkedList2 = (head, left, right) => {
     start.next = newList
     tail.next = currentNode
   
-    if(left > 1) {
-        return head
-    } else {
-        return newList
-    }
+    left > 1 ? head : newList
 } // time: O(n) space: O(1)
 
 const myLinkedList = new LinkedList(1)
