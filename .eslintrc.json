@@ -27,6 +27,7 @@
         "build/"
     ],
     "rules": {
+        "no-constant-condition": "off",
         "no-empty": "off",
         "no-unused-vars": "off",
         "indent": [
