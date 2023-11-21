@@ -1,4 +1,6 @@
-const detectCycle = function(head) {
+// Floyd's tortois and hare algorythm
+
+const detectCycle = (head) => {
     if (!head) {
         return head
     }
@@ -30,4 +32,5 @@ const detectCycle = function(head) {
     }
 
     return p1
-}
+
+} // time: O(n) space: O(1)
